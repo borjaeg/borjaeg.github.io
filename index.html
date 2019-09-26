@@ -40,11 +40,11 @@
         var seconds = Math.floor((distance % _minute) / _second);
 
         document.getElementById('countdown').innerHTML = "Quedan ";
-        document.getElementById('countdown').innerHTML = days + ' dias, ';
+        document.getElementById('countdown').innerHTML += days + ' dias, ';
         document.getElementById('countdown').innerHTML += hours + ' horas, ';
         document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
         document.getElementById('countdown').innerHTML += seconds + ' segundos';
-        document.getElementById('countdown').innerHTML = " para no ser un p*** loser";
+        document.getElementById('countdown').innerHTML += " para no ser un p*** loser";
     }
 
     timer = setInterval(showRemaining, 1000);
